@@ -2,10 +2,10 @@ import curses
 
 
 def main(stdscr):
-    # Disable cursor blinking
+    # Enable cursor blinking
     curses.curs_set(0)
 
-    # Turn off automatic input echoing
+    # Turn on automatic input echoing
     curses.echo()
 
     # Define calculator UI
@@ -13,10 +13,10 @@ def main(stdscr):
         "+-------------------------+",
         "|                         |",  # The calculator screen where input will appear
         "+-------------------------+",
-        "+-----|+|-|7|-|8|-|9|-----+",
-        "+-----|-|-|4|-|5|-|6|-----+",
-        "+-----|*|-|1|-|2|-|3|-----+",
-        "+-----|/|-|  0  |-|=|-----+",
+        "+-----| + |-|7|-|8|-|9|---+",
+        "+-----| - |-|4|-|5|-|6|---+",
+        "+-----| * |-|1|-|2|-|3|---+",
+        "+-----| / |-| 0 |-| = |---+",
         "+-------------------------+"
     ]
 
@@ -44,7 +44,7 @@ def main(stdscr):
             elif key in (8, 127, curses.KEY_BACKSPACE):  # Backspace
                 if len(user_input) > 0:
                     user_input = user_input[:-1]
-            elif chr(key).isdigit() or chr(key) in "+-*/":  # Allow numbers & operators
+            elif chr(key).isdigit() or chr(key) in "+-*/" or chr(key) == '.':  # Allow numbers & operators
                 user_input += chr(key)
 
             # Update display
