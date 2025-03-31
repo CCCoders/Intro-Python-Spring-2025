@@ -1,7 +1,7 @@
 '''
 This program is the foundations for a text adventure game using python.
 @Author K. Fresonke
-Last Updated:
+Last Updated: Mar 31, 2025
 '''
 
 def openingTalk():
@@ -49,7 +49,7 @@ def game():
     elif(adventureStart == "E" or adventureStart == "e"):
         exit()
         
-        
-        
-        
+
+ 
+#Starts the game method
 game()        
