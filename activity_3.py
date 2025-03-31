@@ -4,16 +4,47 @@ This program is the foundations for a text adventure game using python.
 Last Updated: Mar 31, 2025
 '''
 
+#A method is a way to make your code easier to read, or it can be
+# used to do the same process multiple times without repeating many lines
+#def is used to make a method by going def ___():
+#Anything within the method will happen whenever the method is called
+
+#This is the main method for the game
+def game():
+    openingTalk()
+    
+    print("\nAre you ready to go to the ghost town?")
+    
+    #A variable an a while loop can be used to ask for specific values only
+    asking = True
+    while asking == True:
+    
+        adventureStart = input("Ghost Town: G\nExit Game: E\n")
+        
+        #After asking the user if they want to go to the ghost town or exit
+        #the program will either run the ghostTown() method or exit the program
+        
+        if(adventureStart == "G" or adventureStart == "g"):
+            asking = False
+            ghostTown()
+        elif(adventureStart == "E" or adventureStart == "e"):
+            asking = False
+            exit()
+        else:
+            print("Invalid Input: Try Again")
+
+
+
+
 def openingTalk():
     print("Hello traveller!")
 
-    name = input("What is your name?")
+    name = input("What is your name?\n")
 
     print( name + ", I hope you're ready to go on an adventure!")
-    print("\nAre you ready to go to the ghost town?")
 
 def ghostTown():
-    print("Tobey: Welcome to the town of Blanchester! We haven't had visitors"+
+    print("\nTobey: Welcome to the town of Blanchester! We haven't had visitors"+
         " in fifty years. Why do you come here?")
     
     questioning = True
@@ -21,7 +52,7 @@ def ghostTown():
         whyComeHere = input("\n1: To steal all your gold!\n2: To help get rid"+
             " of your scary ghosts.\n3: I just wanted to learn your history!")
         if( whyComeHere == "1"):
-            print("Tobey: We don't have anything for you! Gone get!")
+            print("\nTobey: We don't have anything for you! Gone get!")
             questioning = False
         elif( whyComeHere == "2"):
             ghostHunting()
@@ -41,13 +72,7 @@ def historyOfGhostTown():
     print("\n**********************************" +
         "\nHistory of town chosen... Continue the story from here")
     
-def game():
-    openingTalk()
-    adventureStart = input("\nGhost Town: G\nExit Game: E\n")
-    if(adventureStart == "G" or adventureStart == "g"):
-        ghostTown()
-    elif(adventureStart == "E" or adventureStart == "e"):
-        exit()
+
         
 
  
