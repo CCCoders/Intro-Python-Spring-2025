@@ -1,17 +1,18 @@
 num1 = input("First Number to calculate: ")
 
-while not num1.isdigit():
-    num1 = input("First Number to calculate: ")
+if not num1.isdigit():
+    exit(1)
 
 num2 = input("Second Number to calculate: ")
 
-while not num2.isdigit():
-    num2 = input("Second Number to calculate: ")
-
+if not num2.isdigit():
+    exit(1)
+    
 operation = input("Operation: ")
 
 while operation not in ("+", "-", "/", "*"):
-    operation = input("Operation: ")
+    exit(1)
+    
 num1 = int(num1)
 num2 = int(num2)
 
