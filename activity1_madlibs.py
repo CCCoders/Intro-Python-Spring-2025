@@ -9,12 +9,18 @@ These are also ignored when running your code.
 print("We're going to do a madlib!")
 print("I'm going to ask you for some words, and then I'll put them into a sentence.")
 
+# A print statement without any text will just print an empty new line.
+print()
+
 # The "input" function displays text, then waits for the user to input something.
 # By using something like "word = input("Some text")", we're saving whatever the user typed to a variable called "word".
 noun      = input("Enter a noun: ")
 verb_ing  = input("Enter a verb ending in 'ing': ")
 adjective = input("Enter an adjective: ")
 verb_ed   = input("Enter a verb ending in 'ed': ")
+
+# Here's another empty print statement in order to print an empty new line.
+print()
 
 # This uses a print statement to display the full sentence.
 # The usage of "+" combines text with our variables, so we can display sentences with the user-inputted text mixed in.
