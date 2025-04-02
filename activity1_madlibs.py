@@ -6,4 +6,3 @@ verb = input("Enter a verb ending in 'ing': ")
 
 # Print the resulting madlib
 print(noun + " is " + verb)
-
