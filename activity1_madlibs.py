@@ -1,5 +1,10 @@
 # This is a comment! Anything in a comment is ignored when running your code.
 
+"""
+You can also use three quotes at the start and end to create a comment that spans multiple lines.
+These are also ignored when running your code.  
+"""
+
 # The "input" function displays text, then waits for the user to input something.
 # By using something like "word = input("Some text")", we're saving whatever the user typed to a variable called "word".
 noun = input("Enter a noun: ")
