@@ -5,6 +5,10 @@ You can also use three quotes at the start and end to create a comment that span
 These are also ignored when running your code.  
 """
 
+# The "print" function displays text. These print statements tell the user how to play the game.
+print("We're going to do a madlib!")
+print("I'm going to ask you for some words, and then I'll put them into a sentence.")
+
 # The "input" function displays text, then waits for the user to input something.
 # By using something like "word = input("Some text")", we're saving whatever the user typed to a variable called "word".
 noun = input("Enter a noun: ")
