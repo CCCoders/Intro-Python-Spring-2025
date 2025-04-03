@@ -13,25 +13,28 @@ Last Updated: Apr 02, 2025
 def opening_talk():
     print("Hello traveller!")
 
-    name = input("What is your name?\n")
+    print("What is your name?")
+    name = input()
 
     print(name + ", I hope you're ready to go on an adventure!")
 
 
 def ghost_town():
-    print(
-        "\nTobey: Welcome to the town of Blanchester! We haven't had visitors"
-        + " in fifty years. Why do you come here?"
-    )
+    print()
+    print("Tobey: Welcome to the town of Blanchester! We haven't had visitors" +
+          "in fifty years. Why do you come here?")
 
     questioning = True
     while questioning:
-        why_come_here = input(
-            "\n1: To steal all your gold!\n2: To help get rid"
-            + " of your scary ghosts.\n3: I just wanted to learn your history!"
-        )
+        print()
+        print("1: To steal all your gold!")
+        print("2: To help get rid of your scary ghosts.")
+        print("3: I just wanted to learn your history!")
+        why_come_here = input()
+
         if why_come_here == "1":
-            print("\nTobey: We don't have anything for you! Gone get!")
+            print()
+            print("Tobey: We don't have anything for you! Gone get!")
             questioning = False
         elif why_come_here == "2":
             ghost_hunting()
@@ -44,27 +47,28 @@ def ghost_town():
 
 
 def ghost_hunting():
-    print(
-        "\n**********************************"
-        + "\nGhost hunting chosen... Continue the story from here"
-    )
+    print()
+    print("**********************************")
+    print("Ghost hunting chosen... Continue the story from here")
 
 
 def history_of_ghost_town():
-    print(
-        "\n**********************************"
-        + "\nHistory of town chosen... Continue the story from here"
-    )
+    print()
+    print("**********************************")
+    print("History of town chosen... Continue the story from here")
 
 
 opening_talk()
 
-print("\nAre you ready to go to the ghost town?")
+print()
+print("Are you ready to go to the ghost town?")
 
 # A variable an a while loop can be used to ask for specific values only
 asking = True
 while asking:
-    adventure_start = input("Ghost Town: G\nExit Game: E\n")
+    print("Ghost Town: G")
+    print("Exit Game: E")
+    adventure_start = input()
 
     # After asking the user if they want to go to the ghost town or exit
     # the program will either run the ghost_town() function or exit the program
