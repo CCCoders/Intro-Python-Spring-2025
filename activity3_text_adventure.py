@@ -73,10 +73,10 @@ while asking:
     # After asking the user if they want to go to the ghost town or exit
     # the program will either run the ghost_town() function or exit the program
 
-    if adventure_start == "G" or adventure_start == "g":
+    if adventure_start.lower() == "g":
         asking = False
         ghost_town()
-    elif adventure_start == "E" or adventure_start == "e":
+    elif adventure_start.lower() == "e":
         asking = False
         exit()
     else:
