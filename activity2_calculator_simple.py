@@ -22,18 +22,17 @@ num2 = int(num2)
 
 operation = input("Operation: ")
 
-while operation not in ("+", "-", "/", "*"):
-    print("That operation isn't supported. Exiting now..")
-    exit(1)
-
 # Print empty new line
 print()
 
 if operation == "+":
     print(num1 + num2)
-if operation == "-":
+elif operation == "-":
     print(num1 - num2)
-if operation == "*":
+elif operation == "*":
     print(num1 * num2)
-if operation == "/":
+elif operation == "/":
     print(num1 / num2)
+else:
+    print("That operation isn't supported. Exiting now..")
+    exit(1)
