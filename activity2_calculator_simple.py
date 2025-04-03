@@ -4,6 +4,7 @@ print("This program is a calculator. Enter two numbers and an operation to perfo
 # Print empty new line
 print()
 
+
 num1 = input("First Number to calculate: ")
 
 if not num1.isdigit():
@@ -11,6 +12,7 @@ if not num1.isdigit():
     exit(1)
 
 num1 = int(num1)
+
 
 num2 = input("Second Number to calculate: ")
 
@@ -20,10 +22,12 @@ if not num2.isdigit():
 
 num2 = int(num2)
 
+
 operation = input("Operation: ")
 
 # Print empty new line
 print()
+
 
 if operation == "+":
     result = num1 + num2
