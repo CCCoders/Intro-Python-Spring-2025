@@ -18,7 +18,7 @@ def game():
 
     # A variable an a while loop can be used to ask for specific values only
     asking = True
-    while asking == True:
+    while asking:
         adventureStart = input("Ghost Town: G\nExit Game: E\n")
 
         # After asking the user if they want to go to the ghost town or exit
@@ -49,7 +49,7 @@ def ghostTown():
     )
 
     questioning = True
-    while questioning == True:
+    while questioning:
         whyComeHere = input(
             "\n1: To steal all your gold!\n2: To help get rid"
             + " of your scary ghosts.\n3: I just wanted to learn your history!"
