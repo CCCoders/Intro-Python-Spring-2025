@@ -41,7 +41,6 @@ def ghost_town():
             questioning = False
         else:
             print("Invalid Input: Try again")
-            questioning = True
 
 
 def ghost_hunting():
