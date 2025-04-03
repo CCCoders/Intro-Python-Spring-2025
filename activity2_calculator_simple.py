@@ -1,5 +1,5 @@
 # Print a description of this program
-print("This program is a calculator. Enter two numbers and an operation to perform, and I'll tell you the result.")
+print("This program is a calculator. Enter two numbers and an operation to perform, and it'll tell you the result.")
 
 # Print an empty new line
 print()
