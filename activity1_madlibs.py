@@ -2,7 +2,7 @@
 
 """
 You can also use three quotes at the start and end to create a comment that spans multiple lines.
-These are also ignored when running your code.  
+These are also ignored when running your code.
 """
 
 
