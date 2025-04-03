@@ -5,7 +5,7 @@ print("This program is a calculator. Enter two numbers and an operation to perfo
 print()
 
 
-num1 = input("First Number to calculate: ")
+num1 = input("Enter a whole number: ")
 
 if not num1.isdigit():
     print("That's not a whole number. Exiting now..")
@@ -14,7 +14,7 @@ if not num1.isdigit():
 num1 = int(num1)
 
 
-num2 = input("Second Number to calculate: ")
+num2 = input("Enter another whole number: ")
 
 if not num2.isdigit():
     print("That's not a whole number. Exiting now..")
@@ -23,7 +23,7 @@ if not num2.isdigit():
 num2 = int(num2)
 
 
-operation = input("Operation: ")
+operation = input("Enter an operation: ")
 
 # Print empty new line
 print()
