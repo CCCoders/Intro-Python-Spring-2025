@@ -14,7 +14,7 @@ def opening_talk():
     print("Hello traveller!")
 
     print("What is your name?")
-    name = input()
+    name = input("> ")
 
     print(name + ", I hope you're ready to go on an adventure!")
 
@@ -30,7 +30,7 @@ def ghost_town():
         print("1: To steal all your gold!")
         print("2: To help get rid of your scary ghosts.")
         print("3: I just wanted to learn your history!")
-        why_come_here = input()
+        why_come_here = input("> ")
 
         if why_come_here == "1":
             print()
@@ -68,7 +68,7 @@ asking = True
 while asking:
     print("Ghost Town: G")
     print("Exit Game: E")
-    adventure_start = input()
+    adventure_start = input("> ")
 
     # After asking the user if they want to go to the ghost town or exit
     # the program will either run the ghost_town() function or exit the program
