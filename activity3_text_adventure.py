@@ -1,6 +1,6 @@
 """
 This program is the foundations for a text adventure game using python.
-@Author K. Fresonke
+Author: K. Fresonke
 Last Updated: Mar 31, 2025
 """
 
