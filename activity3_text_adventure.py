@@ -10,13 +10,35 @@ Last Updated: Apr 02, 2025
 # Anything within the function will happen whenever the function is called
 
 
-def opening_talk():
+def opening():
     print("Hello traveller!")
 
     print("What is your name?")
     name = input("> ")
 
     print(name + ", I hope you're ready to go on an adventure!")
+
+    print()
+    print("Are you ready to go to the ghost town?")
+
+    # A variable an a while loop can be used to ask for specific values only
+    asking = True
+    while asking:
+        print("Ghost Town: G")
+        print("Exit Game: E")
+        adventure_start = input("> ")
+
+        # After asking the user if they want to go to the ghost town or exit
+        # the program will either run the ghost_town() function or exit the program
+
+        if adventure_start.lower() == "g":
+            asking = False
+            ghost_town()
+        elif adventure_start.lower() == "e":
+            asking = False
+            exit()
+        else:
+            print("Invalid input. Try again.")
 
 
 def ghost_town():
@@ -58,26 +80,4 @@ def history_of_ghost_town():
     print("History of town chosen... Continue the story from here")
 
 
-opening_talk()
-
-print()
-print("Are you ready to go to the ghost town?")
-
-# A variable an a while loop can be used to ask for specific values only
-asking = True
-while asking:
-    print("Ghost Town: G")
-    print("Exit Game: E")
-    adventure_start = input("> ")
-
-    # After asking the user if they want to go to the ghost town or exit
-    # the program will either run the ghost_town() function or exit the program
-
-    if adventure_start.lower() == "g":
-        asking = False
-        ghost_town()
-    elif adventure_start.lower() == "e":
-        asking = False
-        exit()
-    else:
-        print("Invalid input. Try again.")
+opening()
