@@ -4,12 +4,13 @@ Authors: K. Fresonke, SunOfLife1
 Last Updated: Apr 02, 2025
 """
 
-# A function is a way to make your code easier to read, or it can be
-# used to do the same process multiple times without repeating many lines
-# def is used to make a function by going def ___():
-# Anything within the function will happen whenever the function is called
 
+# This is a function. Functions let you write some code without executing it right away.
+# They can be used to make your code easier to read, and to repeat the same action multiple
+# times without typing it all out every time.
 
+# This function greets the user, asks for their name, and then prompts them to either play
+# the Ghost Town story or exit the program.
 def opening():
     print("Hello traveller!")
 
@@ -21,7 +22,10 @@ def opening():
     print()
     print("Are you ready to go to the ghost town?")
 
-    # A variable an a while loop can be used to ask for specific values only
+    # Here we have a "while" loop. This repeats everything inside the loop while a condition
+    # is true, sorta like an if statement. By setting the "asking" variable to false only when
+    # the user inputs an answer the program recognizes, we can make the program keep asking the
+    # user for an input until they input something we want.
     asking = True
     while asking:
         print("Ghost Town: G")
@@ -46,6 +50,8 @@ def ghost_town():
     print("Tobey: Welcome to the town of Blanchester! We haven't had visitors" +
           "in fifty years. Why do you come here?")
 
+    # This is another "while" loop where the program stops looping only if the user
+    # inputs a recognized value, this time using the "questioning" variable
     questioning = True
     while questioning:
         print()
@@ -80,4 +86,5 @@ def history_of_ghost_town():
     print("History of town chosen... Continue the story from here")
 
 
+# This actually executes the code inside the "opening" function
 opening()
