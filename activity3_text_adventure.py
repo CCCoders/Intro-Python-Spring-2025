@@ -61,15 +61,15 @@ def ghost_town():
         why_come_here = input("> ")
 
         if why_come_here == "1":
+            questioning = False
             print()
             print("Tobey: We don't have anything for you! Gone get!")
-            questioning = False
         elif why_come_here == "2":
+            questioning = False
             ghost_hunting()
-            questioning = False
         elif why_come_here == "3":
-            history_of_ghost_town()
             questioning = False
+            history_of_ghost_town()
         else:
             print("Invalid input. Try again.")
 
