@@ -10,30 +10,6 @@ Last Updated: Apr 02, 2025
 # Anything within the method will happen whenever the method is called
 
 
-# This is the main method for the game
-def game():
-    openingTalk()
-
-    print("\nAre you ready to go to the ghost town?")
-
-    # A variable an a while loop can be used to ask for specific values only
-    asking = True
-    while asking:
-        adventureStart = input("Ghost Town: G\nExit Game: E\n")
-
-        # After asking the user if they want to go to the ghost town or exit
-        # the program will either run the ghostTown() method or exit the program
-
-        if adventureStart == "G" or adventureStart == "g":
-            asking = False
-            ghostTown()
-        elif adventureStart == "E" or adventureStart == "e":
-            asking = False
-            exit()
-        else:
-            print("Invalid Input: Try Again")
-
-
 def openingTalk():
     print("Hello traveller!")
 
@@ -82,5 +58,23 @@ def historyOfGhostTown():
     )
 
 
-# Starts the game method
-game()
+openingTalk()
+
+print("\nAre you ready to go to the ghost town?")
+
+# A variable an a while loop can be used to ask for specific values only
+asking = True
+while asking:
+    adventureStart = input("Ghost Town: G\nExit Game: E\n")
+
+    # After asking the user if they want to go to the ghost town or exit
+    # the program will either run the ghostTown() method or exit the program
+
+    if adventureStart == "G" or adventureStart == "g":
+        asking = False
+        ghost_town()
+    elif adventureStart == "E" or adventureStart == "e":
+        asking = False
+        exit()
+    else:
+        print("Invalid Input: Try Again")
