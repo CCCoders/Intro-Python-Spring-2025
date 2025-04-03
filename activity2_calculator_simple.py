@@ -1,6 +1,9 @@
 # Print a description of this program
 print("This program is a calculator. Enter two numbers and an operation to perform, and I'll tell you the result.")
 
+# Print empty new line
+print()
+
 num1 = input("First Number to calculate: ")
 
 if not num1.isdigit():
@@ -22,6 +25,9 @@ operation = input("Operation: ")
 while operation not in ("+", "-", "/", "*"):
     print("That operation isn't supported. Exiting now..")
     exit(1)
+
+# Print empty new line
+print()
 
 if operation == "+":
     print(num1 + num2)
