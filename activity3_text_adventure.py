@@ -1,5 +1,5 @@
 """
-This program is lays out the foundation for a text adventure game.
+This program lays out the foundation for a text adventure game.
 Authors: K. Fresonke, SunOfLife1
 Last Updated: Apr 02, 2025
 """
@@ -47,7 +47,7 @@ def opening():
 
 def ghost_town():
     print()
-    print("Tobey: Welcome to the town of Blanchester! We haven't had visitors" +
+    print("Tobey: Welcome to the town of Blanchester! We haven't had visitors " +
           "in fifty years. Why do you come here?")
 
     # This is another "while" loop where the program stops looping only if the user
