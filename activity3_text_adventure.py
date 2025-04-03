@@ -1,7 +1,7 @@
 """
 This program is the foundations for a text adventure game using python.
-Author: K. Fresonke
-Last Updated: Mar 31, 2025
+Authors: K. Fresonke, SunOfLife1
+Last Updated: Apr 02, 2025
 """
 
 # A method is a way to make your code easier to read, or it can be
