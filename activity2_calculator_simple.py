@@ -26,13 +26,17 @@ operation = input("Operation: ")
 print()
 
 if operation == "+":
-    print(num1 + num2)
+    result = num1 + num2
 elif operation == "-":
-    print(num1 - num2)
+    result = num1 - num2
 elif operation == "*":
-    print(num1 * num2)
+    result = num1 * num2
 elif operation == "/":
-    print(num1 / num2)
+    result = num1 / num2
 else:
     print("That operation isn't supported. Exiting now..")
     exit(1)
+
+# Another way to print variables is by separating them with commas.
+# If you do this, each variable will be printed with a space after it.
+print(num1, operation, num2, "=", result)
