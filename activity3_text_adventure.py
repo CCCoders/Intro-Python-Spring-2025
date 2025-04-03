@@ -1,5 +1,5 @@
 """
-This program is the foundations for a text adventure game using python.
+This program is lays out the foundation for a text adventure game.
 Authors: K. Fresonke, SunOfLife1
 Last Updated: Apr 02, 2025
 """
