@@ -9,7 +9,7 @@ num1 = input("Enter a whole number: ")
 
 if not num1.isdigit():
     print("That's not a whole number. Exiting now..")
-    exit(1)
+    exit()
 
 num1 = int(num1)
 
@@ -18,7 +18,7 @@ num2 = input("Enter another whole number: ")
 
 if not num2.isdigit():
     print("That's not a whole number. Exiting now..")
-    exit(1)
+    exit()
 
 num2 = int(num2)
 
@@ -39,7 +39,7 @@ elif operation == "/":
     result = num1 / num2
 else:
     print("That operation isn't supported. Exiting now..")
-    exit(1)
+    exit()
 
 # Another way to print variables is by separating them with commas.
 # If you do this, each variable will be printed with a space after it.
