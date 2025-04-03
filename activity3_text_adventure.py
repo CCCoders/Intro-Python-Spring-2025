@@ -43,7 +43,7 @@ def ghost_town():
             history_of_ghost_town()
             questioning = False
         else:
-            print("Invalid Input: Try again")
+            print("Invalid input. Try again.")
 
 
 def ghost_hunting():
@@ -80,4 +80,4 @@ while asking:
         asking = False
         exit()
     else:
-        print("Invalid Input: Try Again")
+        print("Invalid input. Try again.")
