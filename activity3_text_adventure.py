@@ -4,10 +4,10 @@ Authors: K. Fresonke, SunOfLife1
 Last Updated: Apr 02, 2025
 """
 
-# A method is a way to make your code easier to read, or it can be
+# A function is a way to make your code easier to read, or it can be
 # used to do the same process multiple times without repeating many lines
-# def is used to make a method by going def ___():
-# Anything within the method will happen whenever the method is called
+# def is used to make a function by going def ___():
+# Anything within the function will happen whenever the function is called
 
 
 def opening_talk():
@@ -67,7 +67,7 @@ while asking:
     adventure_start = input("Ghost Town: G\nExit Game: E\n")
 
     # After asking the user if they want to go to the ghost town or exit
-    # the program will either run the ghost_town() method or exit the program
+    # the program will either run the ghost_town() function or exit the program
 
     if adventure_start == "G" or adventure_start == "g":
         asking = False
